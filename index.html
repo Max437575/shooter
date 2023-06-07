@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Shooting Gallery🏹</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <canvas id="canvas" width="1080" height="720" >
+    </canvas>
+</body>
+<script src="player.js"></script>
+<script src="scoreText.js"></script>
+<script src="gui.js"></script>
+<script src="duck.js"></script>
+<script src="target.js"></script>
+<script src="spawner.js"></script>
+<script src='main.js'></script>
+<style>
+    @font-face{
+        font-family: "digital-7";
+        src: url("digital.ttf") format("truetype");
+    }
+
+    body, html{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-color: #333333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    canvas{
+        border-radius: 0.5rem;
+        border-color: transparent;
+        max-height: 98%;
+        max-width: 98%;
+        aspect-ratio: 1080 / 720;
+        cursor: url("cursor.png") 16 16, move;
+        cursor: none;
+    }
+</style>
+</html>
